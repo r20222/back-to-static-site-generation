@@ -1,33 +1,47 @@
-> _Fork_ deze leertaak en ga aan de slag. 
-Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Ocean Cleanup Dashboard
+![image](https://github.com/mcphendriks/the-ocean-cleanup/assets/101579892/97f3cd13-fff6-42f2-89fc-c6d8bb57cf76)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+## Inhoudsopgave 
 
-## Inhoudsopgave
+## Beschrijving 📖
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+De Ocean Cleanup is organisatie die als doel heeft de oceaan afvalvrij te maken, dit doen ze onder andere door het plaatsen van interceptors in de oceaan en in de riviermondingen. Deze interceptors vangen het afval op. De Ocean Cleanup wil mensen informeren over wat ze aan het doen zijn. Daarom hebben wij voor de Ocean Cleanup een dashboard gemaakt waarin je allerlei informatie kan vinden over de interceptors. Deze opdracht is gemaakt voor de opleiding Frontend Design & Development aan de HVA.
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## Kenmerken 🛠️
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Dit project is gemaakt met de volgende technologiën:
 
-## Installatie
+* HTML
+* CSS
+* JavaScript
+* Svelte
+* Sveltekit
+* Node.js
+* Chart.js
+* Mapbox
+* Hygraph
+ 
+## Installatie 🎛️
 
-## Gebruik
+1. Clone deze repository naar je code editor.
+2. npm install
+3. npm install graphql-request graphql
+4. npm install chart.js
+5. npm install mapbox
+6. npm install mapbox-gl
+   
+## Gebruik 💻
 
-## Bronnen
+Dit dashboard is bedoeld voor iedereen die interesse heeft in de Ocean Cleanup en kan gebruikt worden om informatie in te zien over de interceptors, zoals bijvoorbeeld hoeveel afval een interceptor uit het water heeft gehaald.
+
+## Bronnen 📻
+
+Chartjs grafieken:
+* https://www.chartjs.org/
+
+API & Hygraph data koppelen:
+* https://kit.svelte.dev/docs/hooks#server-hooks
 
 ## Licentie
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+This project is licensed under the terms of the [MIT license](https://github.com/fdnd-task/lose-your-head-the-client-case/blob/main/LICENSE).
