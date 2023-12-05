@@ -23,7 +23,8 @@
 		<!-- Title + Searchbar -->
 		<section class="header-dashboard">
 			<h1>{data.dataHygraph.dashboard.title}</h1>
-			<form class="search" action="/" method="GET">
+			<!-- R20222 heeft de search uitgecomment -->
+			<!-- <form class="search" action="/" method="GET">
 				<input type="text" name="search" placeholder="Search.." />
 				<input
 					type="submit"
@@ -31,8 +32,8 @@
 					aria-label="search button"
 					class="search-button"
 				/>
-				<!-- voeg een zoekicoon toe -->
-			</form>
+
+			</form> -->
 		</section>
 
 		<TrashRemoved data={data.dataApi.totals} text={data.dataHygraph} />
@@ -190,7 +191,7 @@
 	}
 
 	:global(html) {
-		font-size: 62.5%;
+		/* font-size: 62.5%; */
 		scroll-behavior: smooth;
 	}
 
@@ -417,7 +418,7 @@
 
 	@media (min-width: 992px) {
 		.container2 {
-			margin: 5rem 2rem 2rem 22.3rem;
+			margin: 3rem 2rem 2rem 18rem;
 			grid-template-columns: repeat(6, 1fr);
 			/* grid-template-rows: 0.01fr 0.1fr 0.3fr 0.4fr 0.4fr 0.6fr; */
 			grid-template-areas:

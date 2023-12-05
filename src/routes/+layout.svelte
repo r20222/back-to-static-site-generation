@@ -98,7 +98,7 @@
 	}
 
 	:global(html) {
-		font-size: 62.5%;
+		/* font-size: 62.5%; */
 		scroll-behavior: smooth;
 	}
 
@@ -115,6 +115,8 @@
 
 	ul {
 		padding-left: 2rem;
+		padding-right: 2rem;
+
 	}
 	a {
 		text-decoration: none;
@@ -163,7 +165,7 @@
 		margin: 0 auto;
 		color: #fff;
 		font-weight: 600;
-		font-size: 1.5rem;
+		/* font-size: 1.5rem; */
 		text-transform: uppercase;
 		letter-spacing: 0.05rem;
 	}
@@ -175,7 +177,7 @@
 	.nav-link {
 		text-align: center;
 		color: var(--darkBlue);
-		font-size: 1.5rem;
+		/* font-size: 1.5rem; */
 	}
 
 	.nav-link span {
@@ -193,18 +195,19 @@
 			position: fixed;
 			top: 0;
 			left: 0;
-			width: 20rem;
+			width: 250px;
 			height: 100vh;
 			box-shadow: var(--boxShadow) 0px 0px 8px;
 		}
 
 		nav img {
-			width: 20rem;
+			width: 250px;
 			height: auto;
 		}
 
 		nav {
 			height: 100%;
+			width:250px;
 			flex-direction: column;
 			justify-content: left;
 			gap: 6rem;
@@ -215,7 +218,7 @@
 			display: flex;
 			justify-content: left;
 			align-items: center;
-			margin-bottom: 4rem;
+			margin-bottom: 1rem;
 			gap: 1rem;
 		}
 
@@ -223,9 +226,9 @@
 			display: flex;
 			justify-content: left;
 			align-items: center;
-			gap: 1rem;
+			/* gap: 1rem; */
 			font-weight: 600;
-			font-size: 1.5rem;
+			/* font-size: 1.5rem; */
 			text-transform: uppercase;
 			letter-spacing: 0.05rem;
 		}
@@ -253,7 +256,7 @@
 			align-items: center;
 			gap: 1rem;
 			font-weight: 600;
-			font-size: 1.5rem;
+			font-size: 1rem;
 			text-transform: uppercase;
 			letter-spacing: 0.05rem;
 		}
