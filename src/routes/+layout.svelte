@@ -1,6 +1,10 @@
 <script>
 	import { onMount } from "svelte";
 
+	// static site generation
+	export const prerender = true;
+
+	
    let visible = true
     function ToggleMenu() {
         visible = !visible
