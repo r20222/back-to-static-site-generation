@@ -1,10 +1,11 @@
 <script>
+    export let text
     export let data
 </script>
 
 <section>
-    <h2>{data.title}</h2>
-    <!-- <p>{new Intl.DateTimeFormat().format(data.date)}</p> -->
+    <h2>{text.title}</h2>
+    <p>{new Intl.DateTimeFormat().format(data.date)}</p>
 </section>
 
 <style>

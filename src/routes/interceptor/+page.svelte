@@ -1,7 +1,9 @@
 <script>
     import Infotext from '../../lib/components/infotext.svelte';
 	import TrashRemoved from '../../lib/components/trash-removed.svelte';
+    import Startdate from '../../lib/components/startdate.svelte';
     import Image from '../../lib/molecules/image.svelte';
+    import Map from '../../lib/components/map.svelte'
     export let data
 
 </script>
@@ -10,6 +12,7 @@
     <h2>{data.currentInterceptor[0].name}</h2>
     <Infotext data={data.currentInterceptorHygraph[0].riverInfoText} />
     <TrashRemoved data={data.currentInterceptor[0]} text={data.dataHygraph} />
+    <Startdate data={data.dataApi} text={data.dataHygraph.dashboard.river.riverStartDate} />
     <Image data={data.currentInterceptorHygraph[0].riverImage} />
     <div class="map">
         Hier kan de map komen.

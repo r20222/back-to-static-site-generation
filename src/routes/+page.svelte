@@ -38,8 +38,6 @@
 
 		<TrashRemoved data={data.dataApi.totals} text={data.dataHygraph} />
 
-		<TrashRemoved data={data.dataApi.totals} text={data.dataHygraph} />
-
 		<!-- Box 3: percentage since 2013 -->
 		<section class="panel box-3">
 			<ChartRiverOcean {data} />
