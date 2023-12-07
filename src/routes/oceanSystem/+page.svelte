@@ -4,6 +4,7 @@
     import LastPortCall from '../../lib/components/lastportcall.svelte'
     import Image from '../../lib/molecules/image.svelte';
 	import Startdate from '../../lib/components/startdate.svelte';
+    import Map from '../../lib/components/map.svelte'
     export let data
 </script>
 
@@ -15,12 +16,10 @@
     <h2>{data.dataApi.systems[0]. name}</h2>
     <TrashRemovedOcean data={data.dataApi.systems[0]} text={data.dataHygraph} />
     <Infotext data={data.dataHygraph.dashboard.ocean.oceanInfotext} />
-    <Startdate data={data.dataApi} text={data.dataHygraph.dashboard.ocean.oceanStartDate} />
+    <!-- <Startdate data={data.dataApi} text={data.dataHygraph.dashboard.ocean.oceanStartDate} /> -->
     <LastPortCall data={data} />
     <Image data={data.dataHygraph.dashboard.ocean.oceanImage} />
-    <div class="map">
-        hier komt de map.
-    </div>
+    <Map data={data} />
 </section>
 
 
@@ -80,12 +79,6 @@
 
     h2 {
         grid-area: header;
-    }
-    .map{
-        grid-area: map;
-        width:100%;
-        height:15rem;
-        background-color: grey;
     }
     /* vanaf 992px */
     @media (min-width:62em) {

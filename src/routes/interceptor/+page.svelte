@@ -12,11 +12,11 @@
     <h2>{data.currentInterceptor[0].name}</h2>
     <Infotext data={data.currentInterceptorHygraph[0].riverInfoText} />
     <TrashRemoved data={data.currentInterceptor[0]} text={data.dataHygraph} />
-    <Startdate data={data.dataApi} text={data.dataHygraph.dashboard.river.riverStartDate} />
+    <Startdate data={data.currentInterceptor[0]} text={data.currentInterceptorHygraph[0].riverStartDate} />
     <Image data={data.currentInterceptorHygraph[0].riverImage} />
-    <div class="map">
-        Hier kan de map komen.
-    </div>
+    <section class="map">
+        <Map data={data} />
+    </section>
 </section>
    
 
@@ -42,12 +42,6 @@
      h2 {
          grid-area: header;
      }
-     .map{
-         grid-area: map;
-         width:100%;
-         height:15rem;
-         background-color: grey;
-     }
      /* vanaf 992px */
      @media (min-width:62em) {
      section{
@@ -68,7 +62,6 @@
          grid-area: map;
          width:100%;
          height:100%;
-         background-color: grey;
      }
  }   
 </style>
