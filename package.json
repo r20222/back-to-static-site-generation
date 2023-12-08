@@ -7,10 +7,8 @@
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check .",
 		"format": "prettier --plugin-search-dir . --write ."
-
 	},
 	"devDependencies": {
-		
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
 		"prettier": "^2.8.0",
@@ -20,6 +18,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vite-pwa/sveltekit": "^0.2.10",
 		"auto": "^11.0.4",
 		"chart.js": "^4.4.0",
 		"fetch": "^1.1.0",
@@ -27,6 +26,7 @@
 		"graphql-request": "^6.1.0",
 		"mapbox": "^1.0.0-beta10",
 		"mapbox-gl": "^2.15.0",
+		"node": "^21.2.0",
 		"node-fetch": "^3.3.2"
 	}
 }
