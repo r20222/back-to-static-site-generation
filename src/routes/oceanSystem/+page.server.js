@@ -12,6 +12,9 @@ export async function load() {
         month
       }
       title
+      river {
+        slug
+      }
       ocean {
         oceanStartDate {
           title
@@ -38,16 +41,14 @@ export async function load() {
   const dataHygraph = await hygraph.request(query)
   
   const grrrData = await fetch("https://fdnd-toc-api.netlify.app/ocean")
-        const dataApi = await grrrData.json()
- 
+  const dataApi = await grrrData.json()
 
-        const riverData = await fetch("https://fdnd-toc-api.netlify.app/river");
-        const riverDataJson = await riverData.json();
-      
-      
-        const oceanData = await fetch("https://fdnd-toc-api.netlify.app/ocean");
-        const oceanDataJson = await oceanData.json();
-      
-      
-        return { dataHygraph, dataApi, riverDataJson, oceanDataJson };
-      }
+  const riverData = await fetch("https://fdnd-toc-api.netlify.app/river");
+  const riverDataJson = await riverData.json();
+
+  const oceanData = await fetch("https://fdnd-toc-api.netlify.app/ocean");
+  const oceanDataJson = await oceanData.json();
+
+
+  return { dataHygraph, dataApi, riverDataJson, oceanDataJson };
+}

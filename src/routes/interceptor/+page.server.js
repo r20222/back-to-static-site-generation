@@ -51,9 +51,6 @@ export async function load({ url, params }) {
   
   const grrrData = await fetch("https://fdnd-toc-api.netlify.app/river")
   const interceptorList = await grrrData.json("https://fdnd-toc-api.netlify.app/river")
-
-  // const grrrDataTotal = await fetch()
-  // const dataApi = await grrrDataTotal.json()
  
   const riverData = await fetch("https://fdnd-toc-api.netlify.app/river");
   const riverDataJson = await riverData.json()

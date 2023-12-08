@@ -16,10 +16,12 @@
     <h2>{data.dataApi.systems[0]. name}</h2>
     <TrashRemovedOcean data={data.dataApi.systems[0]} text={data.dataHygraph} />
     <Infotext data={data.dataHygraph.dashboard.ocean.oceanInfotext} />
-    <!-- <Startdate data={data.dataApi} text={data.dataHygraph.dashboard.ocean.oceanStartDate} /> -->
+    <Startdate data={data.dataApi} text={data.dataHygraph.dashboard.ocean.oceanStartDate} />
     <LastPortCall data={data} />
     <Image data={data.dataHygraph.dashboard.ocean.oceanImage} />
-    <Map data={data} />
+    <section class="map">
+        <Map data={data} />
+    </section>
 </section>
 
 
@@ -100,7 +102,6 @@
         grid-area: map;
         width:100%;
         height:100%;
-        background-color: grey;
     }
 }
     

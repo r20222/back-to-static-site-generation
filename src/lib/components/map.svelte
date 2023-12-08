@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	export let data;
 	let map;
-	// console.log(data);
 	onMount(() => {
 		mapboxgl.accessToken =
 			'pk.eyJ1IjoibWNwaGVuZHJpa3MiLCJhIjoiY2xuYWpkajM3MDRvNzJxbzdjbGg1YXc0MiJ9.mRRivdosZVdSXQ9FDd0ZwA';
@@ -12,7 +11,7 @@
 			zoom: 2,
 			center: [-103.5917, 40.6699]
 		});
-
+		
 		const riverGeoData = data.riverDataJson.systems.map((rivers) => ({
 			type: 'Feature',
 			geometry: {
