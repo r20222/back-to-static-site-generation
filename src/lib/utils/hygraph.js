@@ -1,3 +1,4 @@
+import { GITHUB_HYGRAPH_KEY, GITHUB_HYGRAPH_URL } from '$env/static/private'
 
 import { GraphQLClient } from 'graphql-request'
 
