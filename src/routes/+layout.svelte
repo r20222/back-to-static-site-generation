@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from "svelte";
 
 	// static site generation
 	export const prerender = true;
