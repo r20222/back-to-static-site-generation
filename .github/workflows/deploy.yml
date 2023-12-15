@@ -32,7 +32,6 @@ jobs:
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
           
-          token: ${{ secrets.HYGRAPH_URL, secrets.HYGRAPH_KEY }}
         run: |
           npm run build
 
