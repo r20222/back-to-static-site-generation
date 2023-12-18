@@ -1,9 +1,9 @@
 
 import { GraphQLClient } from 'graphql-request'
 
-export const hygraph = new GraphQLClient(GITHUB_HYGRAPH_URL, {
+export const hygraph = new GraphQLClient(HYGRAPH_URL, {
   headers: {
-    Authorization: `Bearer ${GITHUB_HYGRAPH_KEY}`,
+    Authorization: `Bearer ${HYGRAPH_KEY}`,
   },
 })
 
